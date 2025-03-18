@@ -40,17 +40,20 @@ Optionally stores violation data in a database (e.g., SQL) for record-keeping an
 
 High-Level Flow
 
+<details> <summary>**Example with an ASCII Diagram**</summary>
+
 [ Video Feed / Image Input ]
-            |
-            v
+        |
+        v
 [ YOLO-based Object Detection ] --> Detect Motorcyclist & Helmet
-            |
-     (if no helmet)
-            v
+        |
+   (if no helmet)
+        v
 [ License Plate Detection + OCR ] --> Extract Plate Number
-            |
-            v
+        |
+        v
 [ Enforcement Actions ] --> Issue challan / log violation
+</details>
 
 
 Technologies Used:
@@ -113,6 +116,6 @@ Output and Logs:
 
 
 
-
+You can get whole project here ---->         https://drive.google.com/file/d/1JjP5KiWm44um6F5geaUdiX9eHsELI6vT/view?usp=sharing
 
 
