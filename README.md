@@ -78,7 +78,10 @@ Database (Optional)
 Installation1:
 Clone the Repository:
 
-git clone https://github.com/yourusername/safe-plate-guardian.git
+git clone https://github.com/saiguru-2005/Smart-Enforcement-for-Helmet-Compliance-on-the-Road.git
+
+
+
 cd safe-plate-guardian
 
 
