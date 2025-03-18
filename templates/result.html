@@ -1,0 +1,93 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chellan Result</title>
+</head>
+<body>
+    <h1>Chellan Result</h1>
+    <p>License Plate Number: {{ number_plate }}</p>
+    <p>Number of Chellans Issued: {{ count }}</p>
+</body>
+</html> -->
+<!-- second version is from below "main"-->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chellan Details</h1>
+        {% if chellan_details %}
+            <p>License Plate Number: {{ chellan_details[0] }}</p>
+            <p>Chellan Amount: {{ chellan_details[1] }}</p>
+            <p>Reason: {{ chellan_details[2] }}</p>
+            <p>Number of Chellans Issued: {{ chellan_details[3] }}</p>
+        {% else %}
+            <p>No Chellans found for this license plate number.</p>
+        {% endif %}
+    </div>
+</body>
+</html> -->
+
+<!-- 3rd version for testing sowing image -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chellan Details</h1>
+        {% if chellan_details %}
+            <p>License Plate Number: {{ chellan_details[0] }}</p>
+            <p>Chellan Amount: {{ chellan_details[1] }}</p>
+            <p>Reason: {{ chellan_details[2] }}</p>
+            <p>Number of Chellans Issued: {{ chellan_details[3] }}</p>
+            <img src="/outputImages/{{ chellan_details[0] }}.jpg" alt="Rider Image">
+        {% else %}
+            <p>No Chellans found for this license plate number.</p>
+        {% endif %}
+    </div>
+</body>
+</html> -->
+
+<!-- 4th version checking image with static file  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Chellan Details</h1>
+        {% if chellan_details %}
+            <p>License Plate Number: {{ chellan_details[0] }}</p>
+            <p>Chellan Amount: {{ chellan_details[1] }}</p>
+            <p>Reason: {{ chellan_details[2] }}</p>
+            <p>Number of Chellans Issued: {{ chellan_details[3] }}</p>
+            <img src="{{ url_for('static', filename='outputImages/' + chellan_details[0] + '.jpg') }}" alt="Rider Image">
+        {% else %}
+            <p>No Chellans found for this license plate number.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+

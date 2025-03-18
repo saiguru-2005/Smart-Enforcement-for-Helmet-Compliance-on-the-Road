@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Chellans</title>
+</head>
+<body>
+    <h1>Check Chellans</h1>
+    <form action="/check_chellans" method="post">
+        <label for="number_plate">Enter License Plate Number:</label>
+        <input type="text" id="number_plate" name="number_plate">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html> -->
+<!-- second verssion is from below -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Chellan</title>
+</head>
+<body>
+    <h1>Check Chellan</h1>
+    <form action="/check_chellan" method="post">
+        <label for="license_plate">Enter License Plate Number:</label>
+        <input type="text" id="license_plate" name="license_plate" required>
+        <button type="submit">Check Chellan</button>
+    </form>
+</body>
+</html> -->
+<!-- 3rd version from below-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Chellan</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Check Chellan</h1>
+        <form action="/check_chellan" method="post">
+            <label for="license_plate">Enter License Plate Number:</label>
+            <input type="text" id="license_plate" name="license_plate" required>
+            <button type="submit">Check Chellan</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
